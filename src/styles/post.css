@@ -1,0 +1,31 @@
+/* body {
+    display:flex;
+    background-color: aqua;
+    justify-content: center;
+} */
+
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.post p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
