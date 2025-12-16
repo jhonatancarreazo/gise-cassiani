@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getPosts } from '../utils/posts';
 import '../styles/blog.css';
+import { Link } from 'react-router-dom';
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -18,7 +19,10 @@ export default function Blog() {
           <article className="blog-card" key={post.slug}>
             <h2>{post.title}</h2>
             <p>{post.excerpt}</p>
-            <a href={`/blog/${post.slug}`}>Leer más</a>
+            <Link to={`/blog/${post.slug}`} className="read-more">
+              Leer más
+            </Link>
+
           </article>
         ))}
       </div>
