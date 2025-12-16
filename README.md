@@ -1,16 +1,103 @@
-# React + Vite
+# Gise Cassiani – Mom Life & Lifestyle Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal blog and landing page for **Gise Cassiani**, focused on motherhood, lifestyle and real moments.  
+Built as a fast, clean and SEO-friendly site using modern web technologies.
 
-Currently, two official plugins are available:
+🌸 **Theme:** Mom life, lifestyle & real moments  
+🌐 **Live site:** (coming soon)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Clean and feminine design
+- Soft pink gradient & light background
+- Mobile-first and fully responsive
+- Blog with short articles written in **Markdown**
+- SEO friendly (meta tags, Open Graph ready)
+- Fast performance (Vite + static content)
+- Easy content updates (no database needed)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS (custom, no framework)
+- React Router
+- Markdown (for blog posts)
+- Netlify / Vercel (deployment)
+
+---
+
+## 📂 Project Structure
+
+src/
+├─ components/
+│ ├─ Hero.jsx
+│ ├─ Gallery.jsx
+│ ├─ Footer.jsx
+│ └─ SocialLinks.jsx
+├─ pages/
+│ ├─ Blog.jsx
+│ └─ Post.jsx
+├─ posts/
+│ └─ *.md
+├─ utils/
+│ └─ posts.js
+└─ App.jsx
+
+
+---
+
+## ✍️ How to Add a New Blog Post
+
+1. Create a new `.md` file inside `src/posts/`
+
+Example:
+
+```md
+---
+title: "A real mom day"
+excerpt: "Being a mom is not perfect, but it is real."
+date: "2025-01-10"
+---
+
+This is the content of the post written in **Markdown**.
+```
+2. Save the file
+
+3. Commit and push:
+
+```git add .
+git commit -m "New blog post"
+git push
+```
+
+✨ The post will automatically appear on /blog
+
+🚀 Getting Started (Local)
+```npm install
+npm run dev
+```
+👩‍💻 Author
+
+Gise Cassiani
+Mom life, lifestyle & real moments
+
+Instagram: @gisecassiani_1109
+
+Facebook: Gise Cassiani
+
+💡 Developer
+
+Developed by
+Jhonatan Carreazo
+Frontend Web Developer
+
+🌐 https://jhonatancarreazo.dev
+
+
+---
