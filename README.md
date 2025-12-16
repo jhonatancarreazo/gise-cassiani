@@ -4,7 +4,7 @@ Personal blog and landing page for **Gise Cassiani**, focused on motherhood, lif
 Built as a fast, clean and SEO-friendly site using modern web technologies.
 
 🌸 **Theme:** Mom life, lifestyle & real moments  
-🌐 **Live site:** (coming soon)
+🌐 **Live site:** https://gisecassiani.netlify.app/
 
 ---
 
