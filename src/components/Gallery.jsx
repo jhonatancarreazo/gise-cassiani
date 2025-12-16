@@ -1,17 +1,21 @@
 import './Gallery.css';
-import momandson from "../src/assets/images/Momandson.jpg";
+import momandson from '../assets/images/Momandson.jpg';
+import g2 from '../assets/images/g2.jpg'
+import g3 from '../assets/images/g3.jpg'
+import g4 from '../assets/images/g4.jpg'
+import g5 from '../assets/images/g5.jpg'
+import g6 from '../assets/images/g6.jpg'
 
 function Gallery() {
   return (
     <section className="gallery">
       <div className="gallery-grid">
-        <img src="../src/assets/images/Momandson.jpg" alt="Mom life moment" />
         <img src={momandson} alt="Mom life moment" />
-        <img src="../src/assets/images/g2.jpg" alt="Lifestyle moment" />
-        <img src="../src/assets/images/g3.jpg" alt="Real moments" />
-        <img src="../src/assets/images/g4.jpg" alt="Mom blogger life" />
-        <img src="../src/assets/images/g5.jpg" alt="Daily mom life" />
-        <img src="../src/assets/images/g6.jpg" alt="Real mom moments" />
+        <img src={g2} alt="Lifestyle moment" />
+        <img src= {g3} alt="Real moments" />
+        <img src= {g4} alt="Mom blogger life" />
+        <img src= {g5} alt="Daily mom life" />
+        <img src= {g6} alt="Real mom moments" />
       </div>
 
       <a
