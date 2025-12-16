@@ -1,10 +1,12 @@
 import './Gallery.css';
+import momandson from "../src/assets/images/Momandson.jpg";
 
 function Gallery() {
   return (
     <section className="gallery">
       <div className="gallery-grid">
         <img src="../src/assets/images/Momandson.jpg" alt="Mom life moment" />
+        <img src={momandson} alt="Mom life moment" />
         <img src="../src/assets/images/g2.jpg" alt="Lifestyle moment" />
         <img src="../src/assets/images/g3.jpg" alt="Real moments" />
         <img src="../src/assets/images/g4.jpg" alt="Mom blogger life" />
