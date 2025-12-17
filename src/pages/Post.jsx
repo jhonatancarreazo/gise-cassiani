@@ -3,6 +3,9 @@ import ReactMarkdown from 'react-markdown';
 import { useEffect, useState } from 'react';
 import { getPosts } from '../utils/posts';
 import '../styles/post.css'
+import ShareButtons from '../components/ShareButtons';
+import '../styles/share.css';
+
 
 export default function Post() {
   const { slug } = useParams();
@@ -20,6 +23,8 @@ export default function Post() {
     <article className="post">
       <h1>{post.title}</h1>
       <ReactMarkdown>{post.body}</ReactMarkdown>
+      <ShareButtons title={post.title} />
+
     </article>
   );
 }

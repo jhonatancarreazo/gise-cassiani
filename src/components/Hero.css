@@ -106,6 +106,7 @@
     flex-direction: column-reverse;
     text-align: center;
     padding: 3rem 2rem;
+    height: 100vh;
   }
 
   .hero-image {

@@ -1,14 +1,22 @@
-/* body {
+body {
     display:flex;
-    background-color: aqua;
+    background: linear-gradient(
+    135deg,
+    rgba(252, 228, 236, 0.65),
+    rgba(248, 187, 208, 0.65),
+    rgba(244, 143, 177, 0.65)
+  );
     justify-content: center;
-} */
+} 
 
 .post {
   max-width: 800px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
   font-family: 'Poppins', sans-serif;
+  animation: fadeUp 0.8s ease forwards; 
+  border: white 5px solid;
+  border-radius: 20px;
 }
 
 .post h1 {
@@ -18,10 +26,11 @@
 }
 
 .post p {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 2rem;
+  line-height: 1.2;
   color: #555;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .post img {

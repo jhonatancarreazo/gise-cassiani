@@ -24,6 +24,7 @@
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(244, 143, 177, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 0.8s ease forwards;
 }
 
 .blog-card:hover {

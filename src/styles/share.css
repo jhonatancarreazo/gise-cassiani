@@ -1,0 +1,46 @@
+.share {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #f3c6d3;
+  text-align: center;
+}
+
+.share-title {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  background: #f48fb1;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  background: #ec407a;
+  transform: translateY(-2px);
+}
+
+.share-btn.outline {
+  background: transparent;
+  color: #f48fb1;
+  border: 1px solid #f48fb1;
+}
+
+.share-btn.outline:hover {
+  background: #fce4ec;
+}
