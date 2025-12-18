@@ -2,6 +2,7 @@
   padding: 4rem 8%;
   background: #fff;
   text-align: center;
+  position: relative;
 }
 
 .gallery-grid {
