@@ -121,6 +121,24 @@
   animation: fadeIn 1.5s ease forwards;
 }
 
+/* ===== OCULTA VIDEOS EN MOBILE ===== */
+@media (max-width: 768px) {
+  .layer {
+    display: none;
+  }
+}
+
+/* ===== BACKGROUND-IMAGE EN MOBILE ===== */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('../assets/images/493505649_29142565658725408_8769198779357866367_n.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
 /* ===== DESKTOP ONLY ===== */
 @media (min-width: 901px) {
   .layer {
