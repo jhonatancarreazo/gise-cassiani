@@ -1,25 +1,16 @@
-/* ===== BACKGROUND VIDEOS ===== */
 .layer {
-  position: absolute; /* 🔥 mobile safe */
+  position: fixed;
   inset: 0;
   display: flex;
   z-index: 0;
-  overflow: hidden;
 }
 
 .layer video {
   width: 33.3333vw;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   pointer-events: none;
-  filter: blur(0.6px);
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 15%,
-    black 85%,
-    transparent
-  );
+  filter: blur(1px);
   mask-image: linear-gradient(
     to right,
     transparent,
@@ -29,18 +20,15 @@
   );
 }
 
-/* ===== HERO ===== */
 .hero {
   position: relative;
   z-index: 1;
-  min-height: 100svh;
-  min-height: 100vh; /* fallback */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1.5rem;
+  padding: 6rem 0;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
 }
 
 .hero::before {
@@ -49,9 +37,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(255, 225, 235, 0.7),
-    rgba(255, 225, 235, 0.4),
-    rgba(255, 200, 220, 0.6)
+    rgba(255, 225, 235, 0.65),
+    rgba(255, 225, 235, 0.35),
+    rgba(255, 200, 220, 0.55)
   );
   z-index: 1;
   pointer-events: none;
@@ -62,88 +50,97 @@
   z-index: 2;
 }
 
-/* ===== CONTENT ===== */
 .hero-content {
-  max-width: 520px;
+  max-width: 500px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  
 }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+.hero-content h1 {
   animation: fadeUp 0.8s ease forwards;
+} 
+.hero h1 {
+   font-family: 'Playfair Display', serif;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+   animation: fadeUp 0.8s ease forwards;
 }
 
 .hero h2 {
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
   font-weight: 400;
   opacity: 0.9;
-  margin-bottom: 1rem;
+}
+.hero-content h2 {
   animation: fadeUp 0.9s ease forwards;
 }
 
 .hero p {
   font-size: 0.95rem;
   opacity: 0.85;
-  margin-bottom: 1.8rem;
+}
+
+.hero-content p {
   animation: fadeUp 1s ease forwards;
 }
 
-/* ===== BUTTONS ===== */
 .hero-btn {
-  display: block;
-  width: fit-content;
-  margin: 0.7rem auto;
+  display: inline-block;
   background: #f48fb1;
   color: white;
-  padding: 0.85rem 2rem;
+  padding: 0.9rem 2rem;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: 0 10px 25px rgba(244, 143, 177, 0.35);
   transition: all 0.3s ease;
+  margin-right: 2em;
+  margin-bottom:10px ;
+  box-shadow: 0 10px 25px rgba(244, 143, 177, 0.35);
+}
+
+.hero-btn {
   animation: fadeUp 1.1s ease forwards;
 }
 
 .hero-btn:hover {
   background: #ec407a;
   transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(236, 64, 122, 0.45);
 }
 
-/* ===== IMAGE ===== */
 .hero-image img {
-  width: 220px;
+  width: 300px;
+  transform: scale(0.9);
   max-width: 100%;
-  border-radius: 28px;
-  margin-bottom: 1.5rem;
-  animation: fadeIn 1.5s ease forwards;
+  border-radius: 30px;
+  animation: fadeIn 3s ease forwards;
 }
 
-/* ===== DESKTOP ONLY ===== */
-@media (min-width: 901px) {
-  .layer {
-    position: fixed; /* 👈 solo desktop */
-  }
 
+
+
+
+@media (max-width: 900px) {
   .hero {
-    flex-direction: row;
-    text-align: left;
-    padding: 6rem;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 3rem 2rem;
+    height: 100vh;
   }
 
-  .hero-image img {
-    width: 300px;
-    margin-bottom: 0;
+  .hero-image {
+    margin-bottom: 2rem;
   }
 
   .hero h1 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
   }
 }
 
-/* ===== ANIMATIONS ===== */
+
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -156,6 +153,10 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

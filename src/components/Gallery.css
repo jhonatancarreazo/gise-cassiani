@@ -1,29 +1,29 @@
 .gallery {
-  padding: 4rem 8%;
+  padding: 3rem 1.25rem;
   background: #fff;
   text-align: center;
   position: relative;
 }
 
+/* ===== GRID ===== */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
 }
 
+/* ===== IMAGES ===== */
 .gallery-grid img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 18px;
   object-fit: cover;
-  aspect-ratio: 1 / 1;
+  display: block;
+  height: auto;
   transition: transform 0.3s ease;
 }
 
-.gallery-grid img:hover {
-  transform: scale(1.03);
-}
-
+/* ===== BUTTON ===== */
 .gallery-btn {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -32,17 +32,32 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
+  box-shadow: 0 8px 20px rgba(244, 143, 177, 0.35);
 }
 
+/* ===== TABLET ===== */
+@media (min-width: 600px) {
+  .gallery {
+    padding: 4rem 6%;
+  }
 
-@media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
-@media (max-width: 500px) {
+/* ===== DESKTOP ===== */
+@media (min-width: 901px) {
+  .gallery {
+    padding: 4rem 8%;
+  }
+
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.03);
   }
 }
